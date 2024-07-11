@@ -1,0 +1,8 @@
+[package]
+name = "reverse_shell"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+goldberg = "0.1.0"
+tokio = { version = "1.38.0", features = ["full"] }

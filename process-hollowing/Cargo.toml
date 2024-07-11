@@ -1,0 +1,10 @@
+[package]
+name = "process-hollowing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.9", features = ["winnt", "processthreadsapi", "memoryapi", "handleapi", "winbase", "errhandlingapi"] }
+ntapi = "0.4.1"
